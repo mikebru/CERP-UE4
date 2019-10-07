@@ -7,6 +7,10 @@
 		{
 			"Name": "VolumetricClouds",
 			"Enabled": true
+		},
+		{
+			"Name": "OceanPlugin",
+			"Enabled": true
 		}
 	]
 }

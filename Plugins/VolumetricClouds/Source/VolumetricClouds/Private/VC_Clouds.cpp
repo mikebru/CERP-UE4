@@ -255,6 +255,8 @@ void AVC_Clouds::SetMaterialScalar(FName Name, float Value)
 */
 void AVC_Clouds::SetMaterialColor(FName Name, FLinearColor Value)
 {
+
+	
 	if (GetWorld()->IsGameWorld())
 	{
 		if (IsDynamicInGame())
@@ -403,6 +405,14 @@ void AVC_Clouds::Tick(float DeltaTime)
 
 	//Update material instance time.
 	SetMaterialScalar(FName("Time"), Time);
+
+	
+
+	UE_LOG(LogTemp, Warning, TEXT("Cloud Color update"));
+	//update light color and shadow in tick
+	//SetMaterialColor(FName("LightColor"), FLinearColor(LightColor));
+	//SetMaterialColor(FName("ShadowColor"), FLinearColor(ShadowColor));
+
 
 	//Update light direction every frame.
 	//TODO: Terrible solution. FIX it later.
