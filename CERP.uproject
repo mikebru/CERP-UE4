@@ -11,6 +11,10 @@
 		{
 			"Name": "OceanPlugin",
 			"Enabled": true
+		},
+		{
+			"Name": "SpoutPlugin",
+			"Enabled": true
 		}
 	]
 }
